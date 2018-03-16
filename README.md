@@ -16,20 +16,20 @@ This function allows you to:
 
 Initialise an empty character array to receive the information. Next, in your program, call the function and provide the file descriptor and the address of your empty character array, like this:
 
-'''
+```
 char	*line;
 get_next_line(fd, &line);
-'''
+```
 
 Should you wish to print an entire file, similar to the Unix Cat function, you can write a loop like this:
 
-'''
+```
 while (get_next_line(fd, &line))
 {
 	ft_putendl(line);
 	free(line);
 }
-'''
+```
 
 ### Download and compile the libft library
 
